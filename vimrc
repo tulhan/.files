@@ -61,3 +61,11 @@ set wildmode=full
 
 " Text encoding
 set encoding=utf-8 nobomb
+
+" Plugin settings
+if exists("g:loaded_pathogen")
+    set t_Co=256
+    let base16colorspace=256
+    colorscheme base16-bright
+    set background=dark
+endif
