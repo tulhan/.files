@@ -11,8 +11,8 @@ source ~/.files/base16-bright.dark.sh
 HISTCONTROL=ignoreboth	# Ignore lines starting with whitespace and duplicates
 HISTFILE=.history
 HISTTIMEFORMAT="%F% %T"
-HISTSIZE=-1		# Remember unlimited history
-HISTFILESIZE=-1		# Store unlimited history
+HISTSIZE=10000		# Remember unlimited history
+HISTFILESIZE=10000	# Store unlimited history
 
 ## Shell Options
 shopt -s histappend	# Append to history file
@@ -23,3 +23,6 @@ export PS1="\n\[\033[38;5;3m\]\w\\$\[\033[38;5;15m\] "
 
 ## Aliases
 
+
+## OS X
+SHELL_SESSION_HISTORY=0	#Disable Per-Session Shell Command History
