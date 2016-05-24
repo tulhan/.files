@@ -4,6 +4,9 @@
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
+## Colorscheme
+source ~/.files/base16-bright.dark.sh
+
 ## History
 HISTCONTROL=ignoreboth	# Ignore lines starting with whitespace and duplicates
 HISTFILE=.history
