@@ -22,12 +22,12 @@ export PS1="\n\[\033[38;5;3m\]\w\\$\[\033[38;5;15m\] "
 ## Platform
 case $(uname -s) in
     Darwin)
-        echo "OS X"
         SHELL_SESSION_HISTORY=0	#Disable Per-Session Shell Command History
 
         ## Colors
         export CLICOLOR=1
         export LSCOLORS=ExFxBxDxCxegedabagacad
+        export PATH="/usr/local/sbin:$PATH"
         ;;
 
     Linux)
