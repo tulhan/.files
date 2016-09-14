@@ -19,6 +19,7 @@ set relativenumber
 set scrolloff=4
 set colorcolumn=80
 highlight ColorColumn ctermbg=grey
+set list listchars=tab:»·,trail:·
 
 " Syntax, highlighting and spelling
 syntax on
