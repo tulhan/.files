@@ -7,3 +7,5 @@ if [ "$BASH" ]; then
 fi
 
 mesg n || true
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
