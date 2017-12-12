@@ -1,0 +1,11 @@
+Font=Consolas
+FontHeight=9
+FontWeight=400
+FontSmoothing=full
+Locale=en_US
+Charset=UTF-8
+CtrlShiftShortcuts=yes
+Columns=135
+Rows=40
+ScrollbackLines=999999
+Language=en_US
