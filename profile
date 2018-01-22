@@ -1,11 +1,11 @@
-# ~/.profile: executed by Bourne-compatible login shells.
+# ~/.profile: executed by the command interpreter for login shells.
 
-if [ "$BASH" ]; then
-  if [ -f ~/.bashrc ]; then
-    . ~/.bashrc
-  fi
+export LANG=$(locale -uU)
+
+if [ -f "${HOME}/.bashrc" ] ; then
+  source "${HOME}/.bashrc"
 fi
 
-mesg n || true
-
-test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+if [ -d "${HOME}/.bin" ] ; then
+  PATH="${HOME}/.bin:${PATH}"
+fi
