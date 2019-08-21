@@ -3,14 +3,8 @@ umask 077 # WSL: Default umask is not applied (github:Microsoft/WSL/issues/352)
 set -x PATH $PATH ~/.bin
 set -x SHELL (which fish)
 
-# github:danhper/fish-ssh-agent
-if test -z "$SSH_ENV"
-    set -xg SSH_ENV $HOME/.ssh/environment
-end
-
-if not __ssh_agent_is_started
-    __ssh_agent_start
-end
+# https://wiki.archlinux.org/index.php/Fish#Evaluate_ssh-agent
+eval (ssh-agent -c)
 
 # Base16 Shell
 if status --is-interactive
