@@ -1,6 +1,6 @@
 umask 077 # WSL: Default umask is not applied (github:Microsoft/WSL/issues/352)
 
-set -x PATH $PATH ~/bin
+set -x PATH $PATH ~/.bin
 set -x SHELL (which fish)
 
 # github:danhper/fish-ssh-agent
