@@ -1,1 +1,4 @@
 fishd.*
+
+# Ignore files managed by minpac
+vim/pack/minpac/
