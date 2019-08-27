@@ -41,6 +41,14 @@ set wildmode=full
 " Text encoding
 
 " Plugin settings
+packadd minpac
+call minpac#init()
+call minpac#add('tpope/vim-sensible')
+call minpac#add('chriskempson/base16-vim')
+call minpac#add('bling/vim-bufferline')
+call minpac#add('sheerun/vim-polyglot')
+call minpac#add('k-takata/minpac', {'type': 'opt'})
+
 if filereadable(expand("~/.vimrc_background"))
   let base16colorspace=256
   source ~/.vimrc_background
